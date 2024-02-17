@@ -70,8 +70,8 @@ Citation [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Elemen
 
 So, I'm not sure. Will have to do more reading. Some resources to check out could be:
 
-- (HTML for Subheadings and Headings)[https://css-tricks.com/html-for-subheadings-and-headings/]
-- (Layout Cookbook - Card)[https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Card]
+- [HTML for Subheadings and Headings](https://css-tricks.com/html-for-subheadings-and-headings/)
+- [Layout Cookbook - Card](https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Card)
 
 ### Useful resources
 
