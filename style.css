@@ -76,3 +76,16 @@ html {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+.attribution a,
+.attribution a:link,
+.attribution a:visited {
+  color: var(--clr-gray-blue);
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+.attribution a:focus,
+.attribution a:hover,
+.attribution a:active {
+  color: var(--clr-dark-blue);
+}
