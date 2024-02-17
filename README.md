@@ -37,9 +37,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+I used the project as an opportunity to implement a basic BEM (block element modifier) component in CSS.
 
 ```html
 <section class="card">
@@ -56,11 +54,29 @@ To see how you can add code snippets, see below:
 
 ### Continued development
 
-Definitely want to continue to think about the use of heading levels.
+I'd like to look more into the correct use of the heading elements. On the one hand, my understanding was that there should be a single h1 on each page and that you shouldn't skip over any heading levels. On the other hand, this is just a single component, and in practice, it is likely to be used as a part of a larger page (that is likely to have its own h1 element). And if that's the case, then it's hard to know where in the heading levels the component will live.
+
+It seems like the HTML5 specification allows for an h1 in each section of a page. See, for example:
+
+> When a heading is nested in a document banner <header>, it is the heading for the application or site. When nested in <main>, whether or not it is nested within a <header> in <main>, it is the header for that page, not the whole site. When nested in an <article> or <section>, it is the header for that subsection of the page.
+
+Citation [web.dev](https://web.dev/learn/html/headings-and-sections#headings_h1-h6)
+
+But there does seem to be some debate about whether that has been implemented and so the current recommendation is to have only a single h1 per page.
+
+> While using multiple <h1> elements on one page is allowed by the HTML standard (as long as they are not nested), this is not considered a best practice. A page should generally have a single <h1> element that describes the content of the page (similar to the document's <title> element).
+
+Citation [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements#avoid_using_multiple_h1_elements_on_one_page)
+
+So, I'm not sure. Will have to do more reading. Some resources to check out could be:
+
+- (HTML for Subheadings and Headings)[https://css-tricks.com/html-for-subheadings-and-headings/]
+- (Layout Cookbook - Card)[https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Card]
 
 ### Useful resources
 
-- [What heading level to use?](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements) - I'm not actually sure if the title of the card should be an h1 element or not. It is the only h1 on the page, but maybe the idea is that it would be used as a component within a larger page? And so what heading level is the right level?
+- [BEM](https://getbem.com/) - Blocks, Elements and Modifiers
+- [What heading level to use?](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements)
 
 ## Author
 
