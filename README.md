@@ -58,13 +58,13 @@ I'd like to look more into the correct use of the heading elements. On the one h
 
 It seems like the HTML5 specification allows for an h1 in each section of a page. See, for example:
 
-> When a heading is nested in a document banner <header>, it is the heading for the application or site. When nested in <main>, whether or not it is nested within a <header> in <main>, it is the header for that page, not the whole site. When nested in an <article> or <section>, it is the header for that subsection of the page.
+> When a heading is nested in a document banner `<header>`, it is the heading for the application or site. When nested in `<main>`, whether or not it is nested within a `<header>` in `<main>`, it is the header for that page, not the whole site. When nested in an `<article>` or `<section>`, it is the header for that subsection of the page.
 
 Citation [web.dev](https://web.dev/learn/html/headings-and-sections#headings_h1-h6)
 
 But there does seem to be some debate about whether that has been implemented and so the current recommendation is to have only a single h1 per page.
 
-> While using multiple <h1> elements on one page is allowed by the HTML standard (as long as they are not nested), this is not considered a best practice. A page should generally have a single <h1> element that describes the content of the page (similar to the document's <title> element).
+> While using multiple `<h1>` elements on one page is allowed by the HTML standard (as long as they are not nested), this is not considered a best practice. A page should generally have a single `<h1>` element that describes the content of the page (similar to the document's `<title>` element).
 
 Citation [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements#avoid_using_multiple_h1_elements_on_one_page)
 
