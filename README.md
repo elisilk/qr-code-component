@@ -73,6 +73,8 @@ So, I'm not sure. Will have to do more reading. Some resources to check out coul
 - [HTML for Subheadings and Headings](https://css-tricks.com/html-for-subheadings-and-headings/)
 - [Layout Cookbook - Card](https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Card)
 
+I also learned to be careful that [all page content should be contained by landmarks](https://dequeuniversity.com/rules/axe/4.6/region?application=axeAPI). Thanks for the Frontend Mentor validators for catching that error I initially made.
+
 ### Useful resources
 
 - [BEM](https://getbem.com/) - Blocks, Elements and Modifiers
@@ -86,3 +88,5 @@ So, I'm not sure. Will have to do more reading. Some resources to check out coul
 ## Acknowledgments
 
 I definitely want to acknowledge [Kevin Powell](https://www.kevinpowell.co/). Kevin's email newsletter inspired me to give Frontend Mentor a try, and his YouTube video of another Frontend Mentor challenge was the model I used to develop my own solution to this challenge.
+
+And thank you [@Ezekiel225](https://www.frontendmentor.io/profile/Ezekiel225) for leaving me [super helpful feedback with some concrete suggestions for improvement](https://www.frontendmentor.io/solutions/card-component-using-bem-and-css-custom-properties-4MgLuLV-0M).
