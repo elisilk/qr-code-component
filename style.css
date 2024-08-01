@@ -4,9 +4,9 @@
   --fw-normal: 400;
   --fw-bold: 700;
 
-  --fs-200: 0.6875rem;
-  --fs-400: 0.96875rem;
-  --fs-700: 1.375rem;
+  --fs-200: 0.6875rem; /* 11px */
+  --fs-400: 0.96875rem; /* 15.5px */
+  --fs-700: 1.375rem; /* 22px */
 
   --clr-neutral-100: hsl(0, 0%, 100%);
   --clr-neutral-400: hsl(212, 45%, 89%);
@@ -33,10 +33,9 @@ img {
 
 html {
   background-color: var(--clr-neutral-400);
-  font-family: var(--ff-sans);
 }
 
-body {
+main {
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -46,24 +45,21 @@ body {
 .card {
   min-width: 20rem;
   max-width: 20rem;
-  margin-inline: auto;
-  background-color: var(--clr-neutral-100);
-  padding: 16px;
+  padding: 1rem;
+  padding-block-end: 2.5rem;
   text-align: center;
   border-radius: 20px;
-  margin-block: 85px;
   box-shadow: 0px 0px 50px rgb(0 0 0 / 5%);
-}
-
-@media (min-width: 736px) {
-  .card {
-    margin-block: 152px;
-  }
+  color: var(--clr-gray-blue);
+  background-color: var(--clr-neutral-100);
+  font-family: var(--ff-sans);
+  font-weight: var(--fw-normal);
+  font-size: var(--fs-400);
 }
 
 .card__img {
   border-radius: 10px;
-  margin-block-end: 24px;
+  margin-block-end: 1.5rem;
 }
 
 .card__title {
@@ -71,14 +67,52 @@ body {
   line-height: 1.25;
   color: var(--clr-dark-blue);
   margin-inline: 1rem;
-  margin-block-end: 16px;
+  margin-block-end: 1rem;
 }
 
 .card__description {
-  font-weight: var(--fw-normal);
-  font-size: var(--fs-400);
   line-height: 1.22;
-  color: var(--clr-gray-blue);
-  margin-block-end: 25px;
   margin-inline: 1rem;
+}
+
+/* Attribution: 
+HTML5 Boilerplate - https://github.com/h5bp/html5-boilerplate/blob/main/dist/css/style.css */
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .visually-hidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
 }
